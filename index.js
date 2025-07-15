@@ -3,12 +3,12 @@ import fs from 'fs';
 import pino from 'pino';
 import NodeCache from 'node-cache';
 import {
-    default as makeWASocket,
     useMultiFileAuthState,
     delay,
     Browsers,
     makeCacheableSignalKeyStore,
-    DisconnectReason
+    DisconnectReason,
+    makeWASocket,
 } from 'baileys';
 import { Mutex } from 'async-mutex';
 import config from './config.js';
